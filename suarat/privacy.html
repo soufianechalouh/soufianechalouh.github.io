@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Suarat</title>
+  <meta name="description" content="Privacy Policy for Suarat — what data we collect, how it is used, and your choices." />
+  <style>
+    :root { --teal:#0F6B6A; --teal-dark:#0B4F4E; --ink:#10302f; --muted:#5b6f6e; --bg:#f4f8f8; --card:#ffffff; }
+    * { box-sizing: border-box; }
+    html,body { margin:0; padding:0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(160deg, var(--teal), var(--teal-dark));
+      color:#fff; padding: 56px 24px 48px; text-align:center;
+    }
+    header h1 { margin:0 0 8px; font-size: 1.9rem; letter-spacing:-.01em; }
+    header p { margin:0; opacity:.92; font-size:1.05rem; }
+    main { max-width: 720px; margin: -28px auto 64px; padding: 0 20px; }
+    .card {
+      background: var(--card); border-radius: 16px; padding: 28px 26px; margin: 24px 0;
+      box-shadow: 0 8px 30px rgba(0,60,60,.08);
+    }
+    h2 { font-size: 1.25rem; margin: 4px 0 14px; color: var(--teal-dark); }
+    h3 { font-size: 1.02rem; margin: 22px 0 4px; }
+    p, li { margin: 8px 0; color: #21403f; }
+    ul { padding-left: 20px; }
+    .muted { color: var(--muted); font-size:.95rem; }
+    a { color: var(--teal); font-weight: 600; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { text-align:center; color: var(--muted); font-size:.85rem; padding: 0 20px 48px; }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Suarat</h1>
+    <p>Privacy Policy</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <p class="muted">Last updated: 15 August 2026</p>
+      <p>This Privacy Policy explains how the mobile app <strong>Suarat</strong> ("the app", "we", "us") handles information when you use it. Suarat is an AI-assisted calorie and nutrition tracker, available in Arabic, English, Spanish and French. The app is operated by Soufiane Chalouh. We do not require you to create an account, and we do not ask for your name or email address to use the app.</p>
+    </div>
+
+    <div class="card">
+      <h2>Information we collect</h2>
+      <p>We do not collect your name, email address, contacts, or precise location. The app and the third-party services it uses may collect the following:</p>
+
+      <h3>Health and fitness profile</h3>
+      <p>During setup, the app asks you for your sex, age, height, weight, weight goal (lose, maintain or gain), target weight, activity level, dietary preference, fasting habits, desired pace, and what perceived obstacles apply to you, plus how you heard about the app. These answers are used only on your device to calculate your personal daily calorie and macronutrient target. They are kept on your device for the duration of setup and are not sent to our servers and are not included in any analytics event we send to a third party.</p>
+
+      <h3>Product usage and analytics data</h3>
+      <p>We use PostHog to understand how the onboarding funnel and paywall perform. The events we send are: which onboarding step you viewed (identified by a step name, not your answer), that onboarding finished (with your resulting daily calorie target), a diagnostic event if your answers could not produce a valid target, that the paywall was shown, that a free trial started, that a purchase completed (product identifier, price and currency), and that a purchase attempt failed. This data is not used to identify you personally and is processed by PostHog's EU servers.</p>
+
+      <h3>Advertising and attribution data</h3>
+      <p>Suarat is distributed through paid advertising on TikTok and Snapchat. To measure and improve those ad campaigns, the app uses AppsFlyer and the TikTok Business SDK, and asks for permission to use your device's advertising identifier via Apple's App Tracking Transparency prompt. If you allow tracking, AppsFlyer and TikTok receive the same product events listed above for attribution purposes, along with your device's advertising identifier and other device information (such as device model and operating system version) needed to attribute an app install to an ad. The app also reports Apple's SKAdNetwork conversion values, which summarize your progress through onboarding, the paywall and purchase without identifying your device. If you decline tracking, the app still works normally, but ad measurement is limited to non-identifying, aggregated data.</p>
+
+      <h3>Subscription and purchase data</h3>
+      <p>Suarat offers subscriptions through Apple's In-App Purchase system, managed with RevenueCat. Payment is handled entirely by Apple; we never see or store your card details. RevenueCat assigns your device an anonymous subscriber identifier (not your name or email) to track your entitlement status. When a trial starts, a purchase completes, or a subscription is cancelled, RevenueCat relays that event directly to our backend (hosted on Supabase), which stores the anonymous subscriber identifier, product identifier, event type, price, currency and date. This is used only to reconcile subscription revenue and is never linked to your name or email, because we do not collect those.</p>
+
+      <h3>App configuration</h3>
+      <p>At launch, the app fetches its onboarding step configuration from our Supabase backend and caches a copy on your device so onboarding keeps working if you are offline. This configuration is app content (the questions and screens shown to every user), not personal data.</p>
+    </div>
+
+    <div class="card">
+      <h2>What we don't collect</h2>
+      <p>Suarat's AI food-photo scanning feature is not yet available in this version of the app. The app does not access your camera or photo library, and no photo is ever captured, uploaded or analyzed. We will update this Privacy Policy before that feature becomes available.</p>
+    </div>
+
+    <div class="card">
+      <h2>How we use information</h2>
+      <ul>
+        <li>To calculate your personal daily calorie and macronutrient target, entirely on your device.</li>
+        <li>To operate, maintain and improve the onboarding funnel and paywall.</li>
+        <li>To measure and attribute the paid ad campaigns that fund the app.</li>
+        <li>To deliver, restore and reconcile subscriptions.</li>
+        <li>To diagnose bugs and misconfigurations in the app.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Third-party services</h2>
+      <p>The app relies on the following service providers, each of which processes data under its own privacy policy:</p>
+      <ul>
+        <li><strong>PostHog</strong> (product analytics) — <a href="https://posthog.com/privacy">posthog.com/privacy</a></li>
+        <li><strong>AppsFlyer</strong> (ad attribution) — <a href="https://www.appsflyer.com/privacy-policy/">appsflyer.com/privacy-policy</a></li>
+        <li><strong>TikTok Business SDK</strong> (ad attribution) — <a href="https://ads.tiktok.com/i18n/official/policy/privacy">ads.tiktok.com/i18n/official/policy/privacy</a></li>
+        <li><strong>RevenueCat</strong> (subscription management) — <a href="https://www.revenuecat.com/privacy/">revenuecat.com/privacy</a></li>
+        <li><strong>Supabase</strong> (backend infrastructure) — <a href="https://supabase.com/privacy">supabase.com/privacy</a></li>
+        <li><strong>Apple</strong> (in-app purchases &amp; App Store) — <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Your choices</h2>
+      <ul>
+        <li><strong>Tracking:</strong> When you first open the app, you can allow or deny the App Tracking Transparency prompt. You can change this later in <em>Settings &rsaquo; Privacy &amp; Security &rsaquo; Tracking</em>.</li>
+        <li><strong>Subscriptions:</strong> You can review or cancel your subscription at any time in <em>Settings &rsaquo; [your name] &rsaquo; Subscriptions</em> on your device, and restore a previous purchase from the app's paywall.</li>
+        <li><strong>Your onboarding answers:</strong> Because your health and fitness answers are used only on your device and are not stored on our servers, deleting the app removes them.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Data retention</h2>
+      <p>Your health and fitness answers exist only on your device for the current app session and are never transmitted to us. Anonymized analytics and attribution data are retained by our service providers in accordance with their own policies. Anonymous subscription records (subscriber identifier, product, price, currency and date) are retained in our backend to reconcile revenue for as long as your subscription history is relevant, and can be deleted on request.</p>
+    </div>
+
+    <div class="card">
+      <h2>Children's privacy</h2>
+      <p>The app is intended for a general audience and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided information to us, please contact us and we will address it.</p>
+    </div>
+
+    <div class="card">
+      <h2>Changes to this policy</h2>
+      <p>We may update this Privacy Policy from time to time, including when new app features (such as photo-based food scanning) are released. Material changes will be reflected by updating the "Last updated" date above.</p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>If you have any questions about this Privacy Policy, contact us at <a href="mailto:soufianechalouh@gmail.com?subject=Privacy%20Policy%20Question">soufianechalouh@gmail.com</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Soufiane Chalouh. All rights reserved. &middot; <a href="support.html">Support</a></p>
+  </footer>
+</body>
+</html>
