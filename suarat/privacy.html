@@ -54,6 +54,11 @@
       <h3>Health and fitness profile</h3>
       <p>During setup, the app asks you for your sex, age, height, weight, weight goal (lose, maintain or gain), target weight, activity level, dietary preference, fasting habits, desired pace, and what perceived obstacles apply to you, plus how you heard about the app. These answers are used only on your device to calculate your personal daily calorie and macronutrient target. They are kept on your device for the duration of setup and are not sent to our servers and are not included in any analytics event we send to a third party.</p>
 
+      <h3>Meal photos and AI food scanning</h3>
+      <p>Suarat can identify a meal and estimate its calories from a photo you take. When you use this feature: the photo is resized on your device (to a 1024px long edge, JPEG quality 0.7) before it leaves your phone, then uploaded to our backend storage (Supabase Storage). A server function then sends the image to a third-party AI vision service to identify the dish and estimate its portion size. At launch this provider is Anthropic (Claude); because the model is a configurable setting rather than something built into the app, the provider or model may change over time.</p>
+      <p>For each scan we store: the image's storage path, which AI model and prompt version were used, the raw response returned by the model, the resolved dish and calorie result, a device identifier, an optional account identifier if you have signed in, and the time of the scan. If you edit a scan's result (for example, correcting the dish or portion), that correction is stored as well, linked to the scan. Scan requests are rate-limited by your device identifier to prevent abuse.</p>
+      <p>In plain terms: a photo of your meal leaves your device, is processed by a third-party AI service, and is stored on our servers for up to 90 days (see "Data retention" below).</p>
+
       <h3>Product usage and analytics data</h3>
       <p>We use PostHog to understand how the onboarding funnel and paywall perform. The events we send are: which onboarding step you viewed (identified by a step name, not your answer), that onboarding finished (with your resulting daily calorie target), a diagnostic event if your answers could not produce a valid target, that the paywall was shown, that a free trial started, that a purchase completed (product identifier, price and currency), and that a purchase attempt failed. This data is not used to identify you personally and is processed by PostHog's EU servers.</p>
 
@@ -69,13 +74,14 @@
 
     <div class="card">
       <h2>What we don't collect</h2>
-      <p>Suarat's AI food-photo scanning feature is not yet available in this version of the app. The app does not access your camera or photo library, and no photo is ever captured, uploaded or analyzed. We will update this Privacy Policy before that feature becomes available.</p>
+      <p>We do not require an account, and we do not collect your name, email address, contacts, or precise real-time location. We do not access your photo library except for the specific meal photo you choose to submit for scanning, described above.</p>
     </div>
 
     <div class="card">
       <h2>How we use information</h2>
       <ul>
         <li>To calculate your personal daily calorie and macronutrient target, entirely on your device.</li>
+        <li>To identify meals and estimate calories from photos you submit, using a third-party AI vision service.</li>
         <li>To operate, maintain and improve the onboarding funnel and paywall.</li>
         <li>To measure and attribute the paid ad campaigns that fund the app.</li>
         <li>To deliver, restore and reconcile subscriptions.</li>
@@ -91,7 +97,8 @@
         <li><strong>AppsFlyer</strong> (ad attribution) — <a href="https://www.appsflyer.com/privacy-policy/">appsflyer.com/privacy-policy</a></li>
         <li><strong>TikTok Business SDK</strong> (ad attribution) — <a href="https://ads.tiktok.com/i18n/official/policy/privacy">ads.tiktok.com/i18n/official/policy/privacy</a></li>
         <li><strong>RevenueCat</strong> (subscription management) — <a href="https://www.revenuecat.com/privacy/">revenuecat.com/privacy</a></li>
-        <li><strong>Supabase</strong> (backend infrastructure) — <a href="https://supabase.com/privacy">supabase.com/privacy</a></li>
+        <li><strong>Supabase</strong> (backend infrastructure, including meal-photo storage) — <a href="https://supabase.com/privacy">supabase.com/privacy</a></li>
+        <li><strong>Anthropic</strong> (AI vision analysis of meal photos; the provider used for this may change) — <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a></li>
         <li><strong>Apple</strong> (in-app purchases &amp; App Store) — <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
       </ul>
     </div>
@@ -107,7 +114,7 @@
 
     <div class="card">
       <h2>Data retention</h2>
-      <p>Your health and fitness answers exist only on your device for the current app session and are never transmitted to us. Anonymized analytics and attribution data are retained by our service providers in accordance with their own policies. Anonymous subscription records (subscriber identifier, product, price, currency and date) are retained in our backend to reconcile revenue for as long as your subscription history is relevant, and can be deleted on request.</p>
+      <p>Your health and fitness answers exist only on your device for the current app session and are never transmitted to us. Meal-scan images are deleted from our storage after 90 days. The nutrition data derived from a scan (the identified dish, calories and macros) is kept beyond that so your food diary and daily totals continue to work. Anonymized analytics and attribution data are retained by our service providers in accordance with their own policies. Anonymous subscription records (subscriber identifier, product, price, currency and date) are retained in our backend to reconcile revenue for as long as your subscription history is relevant, and can be deleted on request.</p>
     </div>
 
     <div class="card">
@@ -117,7 +124,7 @@
 
     <div class="card">
       <h2>Changes to this policy</h2>
-      <p>We may update this Privacy Policy from time to time, including when new app features (such as photo-based food scanning) are released. Material changes will be reflected by updating the "Last updated" date above.</p>
+      <p>We may update this Privacy Policy from time to time, including when app features or the third-party services we use change. Material changes will be reflected by updating the "Last updated" date above.</p>
     </div>
 
     <div class="card">
